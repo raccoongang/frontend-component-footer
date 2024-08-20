@@ -55,7 +55,9 @@ var SiteFooter = /*#__PURE__*/function (_React$PureComponent) {
         href: "https://raccoongang.com/",
         target: "_blank",
         rel: "noopener noreferrer"
-      }, "by Raccoon Gang", /*#__PURE__*/React.createElement("svg", {
+      }, /*#__PURE__*/React.createElement("span", {
+        className: "release-name"
+      }, "Redwood"), "by Raccoon Gang", /*#__PURE__*/React.createElement("svg", {
         className: isFooterDark ? 'footer-support__logo' : 'footer-support__logo footer-support__logo--is-modified'
       }, /*#__PURE__*/React.createElement("use", {
         href: "".concat(svgSprite, "#logoRaccoon")

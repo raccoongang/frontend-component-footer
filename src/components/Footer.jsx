@@ -47,6 +47,7 @@ class SiteFooter extends React.PureComponent {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
+                  <span className="release-name">Redwood</span>
                   by Raccoon Gang
                   <svg className={
                     isFooterDark
