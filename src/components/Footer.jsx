@@ -7,11 +7,11 @@ import {
   footerLogo, svgSprite, isFooterDark, footerLinks, footerIcons, displayCreatedByBlock,
 } from '@edx/brand'; // eslint-disable-line import/no-unresolved
 import NavLinks from './NavLinks';
-import SocialLinks from './SocialLinks'
+import SocialLinks from './SocialLinks';
 
 import messages from './Footer.messages';
 
-class SiteFooter extends React.Component {
+class SiteFooter extends React.PureComponent {
   render() {
     const { intl } = this.props;
 
@@ -21,7 +21,7 @@ class SiteFooter extends React.Component {
         className="footer"
       >
         <div className="holder">
-          <NavLinks footerLinks={footerLinks}/>
+          <NavLinks footerLinks={footerLinks} />
           <div className="footer-holder">
             {displayCreatedByBlock && (
               <div className="footer-support">
@@ -54,12 +54,12 @@ class SiteFooter extends React.Component {
                       : 'footer-support__logo footer-support__logo--is-modified'
                   }
                   >
-                    <use href={`${svgSprite}#logoRaccoon`}/>
+                    <use href={`${svgSprite}#logoRaccoon`} />
                   </svg>
                 </a>
               </div>
             )}
-            <SocialLinks footerIcons={footerIcons} svgSprite={svgSprite}/>
+            <SocialLinks footerIcons={footerIcons} svgSprite={svgSprite} />
             <div className="footer-logo">
               <a href={`${getConfig().LMS_BASE_URL}/`}>
                 <img
