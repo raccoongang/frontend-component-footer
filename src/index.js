@@ -1,9 +1,14 @@
-import Footer, { EVENT_NAMES } from './components/Footer';
-import messages from './i18n/index';
+/* eslint-disable import/no-named-default, import/no-unresolved */
+import { default as brandMessages } from '@edx/brand/i18n';
 import StudioFooter from './components/studio-footer';
+
+import Footer from './components/Footer';
 import FooterSlot from './components/footer-slot';
+import { default as footerMessages } from './i18n/index';
+
+const messages = { ...footerMessages, ...brandMessages };
 
 export default Footer;
 export {
-  messages, EVENT_NAMES, StudioFooter, FooterSlot,
+  messages, StudioFooter, FooterSlot,
 };
