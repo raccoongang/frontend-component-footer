@@ -1,15 +1,17 @@
 {
   "name": "@edx/frontend-component-footer",
-  "version": "1.0.0-semantically-released",
+  "version": "13.2.0",
   "description": "Footer component for use when building Open edX frontend applications",
   "main": "dist/index.js",
   "publishConfig": {
     "access": "public"
   },
   "scripts": {
+    "prepare": "husky install",
     "build": "make build",
     "i18n_extract": "fedx-scripts formatjs extract",
     "lint": "fedx-scripts eslint --ext .js --ext .jsx .",
+    "lint-style": "stylelint src/**/*.scss",
     "snapshot": "fedx-scripts jest --updateSnapshot",
     "start": "fedx-scripts webpack-dev-server --progress",
     "start:with-theme": "paragon install-theme && npm start && npm install",
@@ -34,6 +36,8 @@
   },
   "homepage": "https://github.com/openedx/frontend-component-footer#readme",
   "devDependencies": {
+    "@commitlint/cli": "^17.4.1",
+    "@commitlint/config-conventional": "^17.4.0",
     "@edx/brand": "npm:@openedx/brand-openedx@^1.2.2",
     "@edx/browserslist-config": "^1.1.1",
     "@edx/frontend-platform": "8.0.1",
@@ -51,7 +55,9 @@
     "react-router-dom": "6.23.0",
     "react-test-renderer": "17.0.2",
     "redux": "4.2.1",
-    "semantic-release": "21.1.2"
+    "semantic-release": "21.1.2",
+    "stylelint": "^14.15.0",
+    "stylelint-config-standard-scss": "^6.1.0"
   },
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "6.5.2",
