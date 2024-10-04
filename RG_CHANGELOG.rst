@@ -9,9 +9,8 @@ and this project adheres to customized Semantic Versioning e.g.: `redwood-rg.1`
 [Unreleased]
 ************
 
-Fixes:
-======
-*
+[redwood-rg.1] 2024-10-04
+*************************
 
 Added:
 =====
@@ -24,7 +23,3 @@ Added:
   * add a "powered by" section (links to RG and edX)
   * add a NavLinks section (static page links)
   * add a SocialLinks section (social media links)
-
-Changed:
-========
-*
