@@ -11,6 +11,13 @@ Footer synchronization with upstream occurs at the time of a major release, such
 [Unreleased]
 ************
 
+[redwood-rg.2] 2024-11-13
+*************************
+
+Changed:
+========
+* Updated changelog (RGOeX-26827)
+
 [redwood-rg.1] 2024-10-04 (Redwood RG release)
 **********************************************
 
